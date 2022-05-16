@@ -30,11 +30,11 @@
         {
             this.FirstName_Lbl = new System.Windows.Forms.Label();
             this.textBox_FirstName = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBox_LastName = new System.Windows.Forms.TextBox();
             this.label_SurName = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox_Phone = new System.Windows.Forms.TextBox();
             this.label_Phone = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBox_Email = new System.Windows.Forms.TextBox();
             this.label_Email = new System.Windows.Forms.Label();
             this.label_SignUpHeader = new System.Windows.Forms.Label();
             this.Btn_Submit = new System.Windows.Forms.Button();
@@ -52,7 +52,6 @@
             this.FirstName_Lbl.TabIndex = 0;
             this.FirstName_Lbl.Text = "First Name";
             this.FirstName_Lbl.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.FirstName_Lbl.Click += new System.EventHandler(this.label1_Click);
             // 
             // textBox_FirstName
             // 
@@ -60,15 +59,13 @@
             this.textBox_FirstName.Name = "textBox_FirstName";
             this.textBox_FirstName.Size = new System.Drawing.Size(166, 20);
             this.textBox_FirstName.TabIndex = 1;
-            this.textBox_FirstName.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
-            // textBox1
+            // textBox_LastName
             // 
-            this.textBox1.Location = new System.Drawing.Point(148, 136);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(166, 20);
-            this.textBox1.TabIndex = 3;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged_1);
+            this.textBox_LastName.Location = new System.Drawing.Point(148, 136);
+            this.textBox_LastName.Name = "textBox_LastName";
+            this.textBox_LastName.Size = new System.Drawing.Size(166, 20);
+            this.textBox_LastName.TabIndex = 3;
             // 
             // label_SurName
             // 
@@ -80,14 +77,13 @@
             this.label_SurName.TabIndex = 2;
             this.label_SurName.Text = "Sur Name";
             this.label_SurName.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.label_SurName.Click += new System.EventHandler(this.label1_Click_1);
             // 
-            // textBox2
+            // textBox_Phone
             // 
-            this.textBox2.Location = new System.Drawing.Point(148, 217);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(166, 20);
-            this.textBox2.TabIndex = 5;
+            this.textBox_Phone.Location = new System.Drawing.Point(148, 217);
+            this.textBox_Phone.Name = "textBox_Phone";
+            this.textBox_Phone.Size = new System.Drawing.Size(166, 20);
+            this.textBox_Phone.TabIndex = 5;
             // 
             // label_Phone
             // 
@@ -100,12 +96,12 @@
             this.label_Phone.Text = "Phone";
             this.label_Phone.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // textBox3
+            // textBox_Email
             // 
-            this.textBox3.Location = new System.Drawing.Point(148, 176);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(166, 20);
-            this.textBox3.TabIndex = 7;
+            this.textBox_Email.Location = new System.Drawing.Point(148, 176);
+            this.textBox_Email.Name = "textBox_Email";
+            this.textBox_Email.Size = new System.Drawing.Size(166, 20);
+            this.textBox_Email.TabIndex = 7;
             // 
             // label_Email
             // 
@@ -136,6 +132,7 @@
             this.Btn_Submit.TabIndex = 9;
             this.Btn_Submit.Text = "Submit";
             this.Btn_Submit.UseVisualStyleBackColor = true;
+            this.Btn_Submit.Click += new System.EventHandler(this.Btn_Submit_Click);
             // 
             // Btn_Cancel
             // 
@@ -157,7 +154,6 @@
             this.label_DOB.TabIndex = 11;
             this.label_DOB.Text = "Date of Birth";
             this.label_DOB.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.label_DOB.Click += new System.EventHandler(this.label1_Click_2);
             // 
             // Form2
             // 
@@ -168,11 +164,11 @@
             this.Controls.Add(this.Btn_Cancel);
             this.Controls.Add(this.Btn_Submit);
             this.Controls.Add(this.label_SignUpHeader);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.textBox_Email);
             this.Controls.Add(this.label_Email);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.textBox_Phone);
             this.Controls.Add(this.label_Phone);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.textBox_LastName);
             this.Controls.Add(this.label_SurName);
             this.Controls.Add(this.textBox_FirstName);
             this.Controls.Add(this.FirstName_Lbl);
@@ -188,11 +184,11 @@
 
         private System.Windows.Forms.Label FirstName_Lbl;
         private System.Windows.Forms.TextBox textBox_FirstName;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBox_LastName;
         private System.Windows.Forms.Label label_SurName;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox textBox_Phone;
         private System.Windows.Forms.Label label_Phone;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox textBox_Email;
         private System.Windows.Forms.Label label_Email;
         private System.Windows.Forms.Label label_SignUpHeader;
         private System.Windows.Forms.Button Btn_Submit;

@@ -22,29 +22,25 @@ namespace BankLogin_App
 
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private bool ValidateForm()
         {
+            string message = String.Empty;
 
+            if (textBox_FirstName.Text == String.Empty) message += "Please enter a valid first Name";
+            if (textBox_LastName.Text == String.Empty) message += "Please enter a valid last Name";
+            if (textBox_Phone.Text == String.Empty) message += "Please enter a valid phone numnber";
+            if (textBox_Email.Text == String.Empty) message += "Please enter a valid email address";
+
+            if (message != String.Empty) MessageBox.Show(message);
+            return message == String.Empty;
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
+        private void Btn_Submit_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void label1_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox1_TextChanged_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click_2(object sender, EventArgs e)
-        {
-
+            //Call ValidateForm()
+            //Intialise a new AccountHolder object with data from the form inputs
+            //request controller to add new AccountHolder to database
+            //if request is successful display message box
         }
     }
 }
