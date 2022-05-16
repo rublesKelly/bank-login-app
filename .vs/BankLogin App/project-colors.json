@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "5c03ea32-c808-42a4-8779-29fa63e10155": {
+      "ProjectGuid": "5c03ea32-c808-42a4-8779-29fa63e10155",
+      "DisplayName": "BankLogin App",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}
