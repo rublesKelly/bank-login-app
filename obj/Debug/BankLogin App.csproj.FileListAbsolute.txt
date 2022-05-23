@@ -1,0 +1,12 @@
+E:\Users\HP\Documents\1 Robert Documents\FIT College\c# Programming\Assemement\BankLogin App\obj\Debug\BankLogin App.csproj.AssemblyReference.cache
+E:\Users\HP\Documents\1 Robert Documents\FIT College\c# Programming\Assemement\BankLogin App\obj\Debug\BankLogin App.csproj.SuggestedBindingRedirects.cache
+E:\Users\HP\Documents\1 Robert Documents\FIT College\c# Programming\Assemement\BankLogin App\obj\Debug\BankLogin_App.Form1.resources
+E:\Users\HP\Documents\1 Robert Documents\FIT College\c# Programming\Assemement\BankLogin App\obj\Debug\BankLogin_App.Form2.resources
+E:\Users\HP\Documents\1 Robert Documents\FIT College\c# Programming\Assemement\BankLogin App\obj\Debug\BankLogin_App.Properties.Resources.resources
+E:\Users\HP\Documents\1 Robert Documents\FIT College\c# Programming\Assemement\BankLogin App\obj\Debug\BankLogin App.csproj.GenerateResource.cache
+E:\Users\HP\Documents\1 Robert Documents\FIT College\c# Programming\Assemement\BankLogin App\obj\Debug\BankLogin App.csproj.CoreCompileInputs.cache
+E:\Users\HP\Documents\1 Robert Documents\FIT College\c# Programming\Assemement\BankLogin App\bin\Debug\BankLogin App.exe.config
+E:\Users\HP\Documents\1 Robert Documents\FIT College\c# Programming\Assemement\BankLogin App\bin\Debug\BankLogin App.exe
+E:\Users\HP\Documents\1 Robert Documents\FIT College\c# Programming\Assemement\BankLogin App\bin\Debug\BankLogin App.pdb
+E:\Users\HP\Documents\1 Robert Documents\FIT College\c# Programming\Assemement\BankLogin App\obj\Debug\BankLogin App.exe
+E:\Users\HP\Documents\1 Robert Documents\FIT College\c# Programming\Assemement\BankLogin App\obj\Debug\BankLogin App.pdb

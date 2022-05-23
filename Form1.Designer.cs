@@ -31,6 +31,7 @@
             this.WelcomeHeader = new System.Windows.Forms.Label();
             this.SignUp_Btn = new System.Windows.Forms.Button();
             this.Login_Btn = new System.Windows.Forms.Button();
+            this.TestingButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // WelcomeHeader
@@ -66,11 +67,23 @@
             this.Login_Btn.UseVisualStyleBackColor = true;
             this.Login_Btn.Click += new System.EventHandler(this.Login_Btn_Click);
             // 
+            // TestingButton
+            // 
+            this.TestingButton.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.TestingButton.Location = new System.Drawing.Point(177, 283);
+            this.TestingButton.Name = "TestingButton";
+            this.TestingButton.Size = new System.Drawing.Size(220, 58);
+            this.TestingButton.TabIndex = 3;
+            this.TestingButton.Text = "Test GetAll Accountholders";
+            this.TestingButton.UseVisualStyleBackColor = false;
+            this.TestingButton.Click += new System.EventHandler(this.TestingButton_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(618, 367);
+            this.Controls.Add(this.TestingButton);
             this.Controls.Add(this.Login_Btn);
             this.Controls.Add(this.SignUp_Btn);
             this.Controls.Add(this.WelcomeHeader);
@@ -87,6 +100,7 @@
         private System.Windows.Forms.Label WelcomeHeader;
         private System.Windows.Forms.Button SignUp_Btn;
         private System.Windows.Forms.Button Login_Btn;
+        private System.Windows.Forms.Button TestingButton;
     }
 }
 

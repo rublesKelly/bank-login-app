@@ -48,6 +48,7 @@
   <ItemGroup>
     <Compile Include="AccountHolder.Model.cs" />
     <Compile Include="Account.Model.cs" />
+    <Compile Include="BankDAOBase.cs" />
     <Compile Include="Controller.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>

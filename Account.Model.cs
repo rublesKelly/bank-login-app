@@ -14,9 +14,9 @@ namespace Account.Model
         public string AccountHolderID { get; set; }
 
 
-        //Constructors 
+        //Paramerterless Constructor
         public Account() { }
-
+        //Paramerter Constructor
         public Account(string account_id, decimal balance, string account_holderID)
         {
             AccountID = account_id;
