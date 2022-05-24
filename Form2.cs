@@ -7,6 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using AccountHolderModel;
+using Controller;
+
 
 namespace BankLogin_App
 {
@@ -16,6 +19,9 @@ namespace BankLogin_App
         {
             InitializeComponent();
         }
+
+        //Gloabal Variables
+        BankDAO DAO = new BankDAO();
 
         private void Form2_Load(object sender, EventArgs e)
         {
@@ -38,9 +44,36 @@ namespace BankLogin_App
         private void Btn_Submit_Click(object sender, EventArgs e)
         {
             //Call ValidateForm()
+            bool isValid = ValidateForm();
+
             //Intialise a new AccountHolder object with data from the form inputs
-            //request controller to add new AccountHolder to database
-            //if request is successful display message box
+            if (isValid) {
+                AccountHolder accountHolder = new AccountHolder
+                {
+                    FirstName = textBox_FirstName.Text,
+                    LastName = textBox_LastName.Text,
+                    Address = textBox_Address.Text,
+                    PhoneNum = textBox_Phone.Text,
+                    Email = textBox_Email.Text,
+                    Password = textBox_Password.Text,
+                    DateOfBirth = dateTimePicker.Value
+                }; 
+
+                //request controller to add new AccountHolder to database
+                DAO.InsertAccountHolder(accountHolder, out bool success);
+
+                //if request is successful display message box
+                if (success)
+                {
+                    MessageBox.Show("Your AccountHolder profile has been added please login");
+                }
+            //OnClose on the message box form2 closes and form1 opens
+            }
+        }
+
+        private void Btn_Cancel_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

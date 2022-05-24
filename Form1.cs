@@ -29,7 +29,7 @@ namespace BankLogin_App
 
             if (succcess)
             {
-                MessageBox.Show("Success is true " + listOfAccountHolders[1].ToString());
+                MessageBox.Show("Success is true " + listOfAccountHolders.ToString());
             }
             else
             {
@@ -50,6 +50,13 @@ namespace BankLogin_App
         private void TestingButton_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void SignUp_Btn_Click(object sender, EventArgs e)
+        {
+            Form2 form2 = new Form2(); //Initaialise a new Form2 object form Form2 class
+
+            form2.Show();
         }
     }
 }

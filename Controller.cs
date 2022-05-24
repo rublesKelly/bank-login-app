@@ -40,14 +40,68 @@ namespace Controller
 
             command.Parameters.Add(new SqlParameter()
             {
-                ParameterName = "@FirstName",
+                ParameterName = "@first_name",
                 Value = accountHolder.FirstName,
                 SqlDbType = SqlDbType.VarChar,
                 Size = 50
             });
 
+            command.Parameters.Add(new SqlParameter()
+            {
+                ParameterName = "@last_name",
+                Value = accountHolder.LastName,
+                SqlDbType = SqlDbType.VarChar,
+                Size = 50
+            });
+
+            command.Parameters.Add(new SqlParameter()
+            {
+                ParameterName = "@address",
+                Value = accountHolder.Address,
+                SqlDbType = SqlDbType.VarChar,
+                Size = 50
+            });
+
+            command.Parameters.Add(new SqlParameter()
+            {
+                ParameterName = "@account_id",
+                Value = accountHolder.AccountID,
+                SqlDbType = SqlDbType.VarChar,
+                Size = 50
+            });
+
+            command.Parameters.Add(new SqlParameter()
+            {
+                ParameterName = "@phone_num",
+                Value = accountHolder.AccountID,
+                SqlDbType = SqlDbType.VarChar,
+                Size = 50
+            });
+
+            command.Parameters.Add(new SqlParameter()
+            {
+                ParameterName = "@email",
+                Value = accountHolder.AccountID,
+                SqlDbType = SqlDbType.VarChar,
+                Size = 50
+            });
+
+            command.Parameters.Add(new SqlParameter()
+            {
+                ParameterName = "@password",
+                Value = accountHolder.AccountID,
+                SqlDbType = SqlDbType.VarChar,
+                Size = 50
+            });
+
+            command.Parameters.Add(new SqlParameter()
+            {
+                ParameterName = "@date_of_birth",
+                Value = accountHolder.DateOfBirth,
+                SqlDbType = SqlDbType.DateTime                
+            });
         }
-        //Search AccountHolders 
+        //Get all or many AccountHolders
         public List<AccountHolder> GetAccountHolders(out bool success)
         {
             //Declare list to be filled
@@ -103,8 +157,41 @@ namespace Controller
             }
             return listOfAccountHolders;
         }
-        //Get all or many AccountHolders
+        //Search AccountHolders 
         //Insert AccountHolder 
+        public void InsertAccountHolder(AccountHolder accountHolder, out bool success)
+        {
+            string sql = "INSERT INTO account_holder_table" +
+                "(first_name, last_name, address, phone_num, email, password, date_of_birth) " +
+                "Values (@first_name, @last_name, @address, @phone_num, @email, @password, @date_of_birth)";
+            try
+            {
+                //Set up command 
+                SqlCommand command = new SqlCommand(sql, connection);
+
+                //Open connection to DB
+                connection.Open();
+
+                //Execute command and verify success with numRows
+                int numRows = command.ExecuteNonQuery();
+                if (numRows > 0) success = true; else success = false;
+            }
+            catch (SqlException ex)
+            {
+                success = false;
+                Console.WriteLine(ex);
+
+            }
+            finally
+            {
+                if (connection.State != ConnectionState.Closed)
+                {
+                    connection.Close();
+                }
+            }
+
+
+        }
             //Need to create a new account to here with a blank balance
         //Delete AccountHolder
         //Update AccountHolder
