@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.WelcomeHeader = new System.Windows.Forms.Label();
             this.SignUp_Btn = new System.Windows.Forms.Button();
             this.Login_Btn = new System.Windows.Forms.Button();
@@ -35,6 +36,8 @@
             this.label_Password = new System.Windows.Forms.Label();
             this.textBox_Email = new System.Windows.Forms.TextBox();
             this.label_Email = new System.Windows.Forms.Label();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
+            this.buttonPassViewer = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // WelcomeHeader
@@ -55,8 +58,9 @@
             this.SignUp_Btn.Location = new System.Drawing.Point(286, 242);
             this.SignUp_Btn.Name = "SignUp_Btn";
             this.SignUp_Btn.Size = new System.Drawing.Size(104, 34);
-            this.SignUp_Btn.TabIndex = 1;
+            this.SignUp_Btn.TabIndex = 3;
             this.SignUp_Btn.Text = "Sign Up";
+            this.toolTip1.SetToolTip(this.SignUp_Btn, "Create new account");
             this.SignUp_Btn.UseVisualStyleBackColor = true;
             this.SignUp_Btn.Click += new System.EventHandler(this.SignUp_Btn_Click);
             // 
@@ -75,8 +79,9 @@
             // 
             this.textBox_Password.Location = new System.Drawing.Point(218, 177);
             this.textBox_Password.Name = "textBox_Password";
+            this.textBox_Password.PasswordChar = '*';
             this.textBox_Password.Size = new System.Drawing.Size(210, 20);
-            this.textBox_Password.TabIndex = 21;
+            this.textBox_Password.TabIndex = 1;
             // 
             // label_Password
             // 
@@ -94,7 +99,7 @@
             this.textBox_Email.Location = new System.Drawing.Point(218, 139);
             this.textBox_Email.Name = "textBox_Email";
             this.textBox_Email.Size = new System.Drawing.Size(210, 20);
-            this.textBox_Email.TabIndex = 19;
+            this.textBox_Email.TabIndex = 0;
             // 
             // label_Email
             // 
@@ -107,11 +112,25 @@
             this.label_Email.Text = "Email";
             this.label_Email.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
+            // buttonPassViewer
+            // 
+            this.buttonPassViewer.BackgroundImage = global::BankLogin_App.Properties.Resources.Screenshot_55;
+            this.buttonPassViewer.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.buttonPassViewer.FlatAppearance.BorderSize = 0;
+            this.buttonPassViewer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonPassViewer.Location = new System.Drawing.Point(435, 173);
+            this.buttonPassViewer.Name = "buttonPassViewer";
+            this.buttonPassViewer.Size = new System.Drawing.Size(24, 24);
+            this.buttonPassViewer.TabIndex = 21;
+            this.buttonPassViewer.UseVisualStyleBackColor = false;
+            this.buttonPassViewer.Click += new System.EventHandler(this.buttonPassViewer_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(548, 349);
+            this.Controls.Add(this.buttonPassViewer);
             this.Controls.Add(this.textBox_Password);
             this.Controls.Add(this.label_Password);
             this.Controls.Add(this.textBox_Email);
@@ -136,6 +155,8 @@
         private System.Windows.Forms.Label label_Password;
         private System.Windows.Forms.TextBox textBox_Email;
         private System.Windows.Forms.Label label_Email;
+        private System.Windows.Forms.ToolTip toolTip1;
+        private System.Windows.Forms.Button buttonPassViewer;
     }
 }
 

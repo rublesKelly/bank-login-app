@@ -11,7 +11,7 @@ namespace AccountHolderModel
         //Constructors
         public AccountHolder() { }
 
-        public AccountHolder(string id, string first_name, string last_name, string address,
+        public AccountHolder(int id, string first_name, string last_name, string address,
                               int account_id, string phone_num, string email, string password,
                             DateTime date_of_birth )
         {
@@ -28,7 +28,7 @@ namespace AccountHolderModel
         }
 
         //Properties
-        public string ID { get; set;}
+        public int ID { get; set;}
         public string FirstName { get; set;}
         public string LastName { get; set; }
         public string Address { get; set; }

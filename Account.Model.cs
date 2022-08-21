@@ -4,24 +4,26 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Account.Model
+namespace AccountModel
 {
     internal class Account
     {
         //Properties 
-        public string AccountID { get; set; }
+        public int ID { get; set; }
         public decimal Balance { get; set; }
-        public string AccountHolderID { get; set; }
+        public int AccountHolderID { get; set; }
+        public string AccountHolder { get; set; }
 
 
         //Paramerterless Constructor
         public Account() { }
         //Paramerter Constructor
-        public Account(string account_id, decimal balance, string account_holderID)
+        public Account(int id, decimal balance, int account_holderID, string account_holder)
         {
-            AccountID = account_id;
+            ID = id;
             Balance = balance;
             AccountHolderID = account_holderID;
+            AccountHolder = account_holder;
         }
     }
 }
